@@ -4,7 +4,11 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-     use("github/copilot.vim")
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+    use("github/copilot.vim")
     use 'm4xshen/autoclose.nvim'
     use 'kdheepak/lazygit.nvim'
     use { "akinsho/toggleterm.nvim", tag = '*', config = function()
@@ -60,7 +64,7 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
-    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }) 
+    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 
 
 end)
