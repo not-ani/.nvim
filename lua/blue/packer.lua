@@ -4,6 +4,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    use 'echasnovski/mini.trailspace'
+    use 'echasnovski/mini.ai'
     -- If you are using Packer
     use 'shaunsingh/nord.nvim'
     use {

@@ -154,6 +154,16 @@ _G.packer_plugins = {
     path = "/home/blue/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.ai"] = {
+    loaded = true,
+    path = "/home/blue/.local/share/nvim/site/pack/packer/start/mini.ai",
+    url = "https://github.com/echasnovski/mini.ai"
+  },
+  ["mini.trailspace"] = {
+    loaded = true,
+    path = "/home/blue/.local/share/nvim/site/pack/packer/start/mini.trailspace",
+    url = "https://github.com/echasnovski/mini.trailspace"
+  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/home/blue/.local/share/nvim/site/pack/packer/start/nord.nvim",
