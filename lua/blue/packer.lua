@@ -4,6 +4,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    -- If you are using Packer
+    use 'shaunsingh/nord.nvim'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -34,6 +36,8 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' }, -- Optional
         }
     }
+    use 'nvim-tree/nvim-web-devicons'
+    use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
     use "pocco81/auto-save.nvim"
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
