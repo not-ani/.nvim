@@ -4,7 +4,9 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    use 'echasnovski/mini.animate'
     use 'echasnovski/mini.trailspace'
+    use { 'echasnovski/mini.indentscope', branch = 'stable' }
     use 'echasnovski/mini.cursorword'
     use 'echasnovski/mini.ai'
     -- If you are using Packer

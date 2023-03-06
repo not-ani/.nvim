@@ -159,10 +159,20 @@ _G.packer_plugins = {
     path = "/home/blue/.local/share/nvim/site/pack/packer/start/mini.ai",
     url = "https://github.com/echasnovski/mini.ai"
   },
+  ["mini.animate"] = {
+    loaded = true,
+    path = "/home/blue/.local/share/nvim/site/pack/packer/start/mini.animate",
+    url = "https://github.com/echasnovski/mini.animate"
+  },
   ["mini.cursorword"] = {
     loaded = true,
     path = "/home/blue/.local/share/nvim/site/pack/packer/start/mini.cursorword",
     url = "https://github.com/echasnovski/mini.cursorword"
+  },
+  ["mini.indentscope"] = {
+    loaded = true,
+    path = "/home/blue/.local/share/nvim/site/pack/packer/start/mini.indentscope",
+    url = "https://github.com/echasnovski/mini.indentscope"
   },
   ["mini.trailspace"] = {
     loaded = true,
