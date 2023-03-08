@@ -4,6 +4,19 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+   use { "anuvyklack/windows.nvim",
+   requires = {
+      "anuvyklack/middleclass",
+      "anuvyklack/animation.nvim"
+   },
+   config = function()
+      vim.o.winwidth = 10
+      vim.o.winminwidth = 10
+      vim.o.equalalways = false
+      require('windows').setup()
+   end
+}
+    use 'xiyaowong/nvim-transparent'
     use 'echasnovski/mini.animate'
     use 'echasnovski/mini.trailspace'
     use { 'echasnovski/mini.indentscope', branch = 'stable' }
